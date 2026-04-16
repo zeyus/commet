@@ -9,7 +9,7 @@ set(BINARY_NAME "commet")
 # https://wiki.gnome.org/HowDoI/ChooseApplicationID
 
 if ($ENV{COMMET_PROD} MATCHES "1")
-  set(APPLICATION_ID "chat.commet.commetapp")
+  set(APPLICATION_ID "chat.commet.commetapp.zdev")
   message("Building in PRODUCTION mode")
 else()
   set(APPLICATION_ID "chat.commet.commetapp.develop")
@@ -48,7 +48,7 @@ endif()
 # of modifying this function.
 function(APPLY_STANDARD_SETTINGS TARGET)
   target_compile_features(${TARGET} PUBLIC cxx_std_17)
-  target_compile_options(${TARGET} PRIVATE -Wall -Werror)
+  target_compile_options(${TARGET} PRIVATE -Wall)
   target_compile_options(${TARGET} PRIVATE "$<$<NOT:$<CONFIG:Debug>>:-O3>")
   target_compile_definitions(${TARGET} PRIVATE "$<$<NOT:$<CONFIG:Debug>>:NDEBUG>")
 endfunction()

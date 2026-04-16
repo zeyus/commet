@@ -16,6 +16,7 @@ import 'package:intl/intl.dart';
 import 'package:flutter/material.dart' as m;
 import 'package:tiamat/tiamat.dart' as tiamat;
 
+import 'package:flutter_vodozemac/flutter_vodozemac.dart' as fvod;
 import 'package:vodozemac/vodozemac.dart' as vod;
 import 'package:intl/intl.dart' as intl;
 
