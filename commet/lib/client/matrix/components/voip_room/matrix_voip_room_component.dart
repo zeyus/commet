@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:commet/client/components/emoticon/emoticon.dart';
 import 'package:commet/client/components/voip/voip_session.dart';
 import 'package:commet/client/components/voip_room/voip_room_component.dart';
 import 'package:commet/client/matrix/components/matrix_sync_listener.dart';
@@ -91,6 +92,13 @@ class MatrixVoipRoomComponent
   void onStateChanged(void event) {
     final state = currentSession?.state;
     print("Got call state: ${state}");
+
+    if (state == VoipState.connected) {
+      // Set up handler for reactions - e.g. applause
+      currentSession?.onReactionReceived.listen((event) {
+        print("Received reaction: ${event.reaction}");
+      });
+    }
 
     if (state == VoipState.ended) {
       currentSession = null;

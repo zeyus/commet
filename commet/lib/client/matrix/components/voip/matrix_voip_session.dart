@@ -128,7 +128,7 @@ class MatrixVoipSession implements VoipSession {
     WebrtcDefaultDevices.selectOutputDevice();
 
     var defaultStream = await WebrtcDefaultDevices.getDefaultMicrophone();
-
+    // session.room.client.onTimelineEvent.stream.where((event) => event.type == "io.element.call.reaction");
     if (defaultStream != null) {
       return session.answerWithStreams([
         matrix.WrappedMediaStream(
