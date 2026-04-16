@@ -25,10 +25,15 @@ class UnicodeEmojiBuilder implements Builder {
 
     String shortcodesString =
         await File("assets/emoji_data/shortcodes/en.json").readAsString();
+    
+    String callExtensionsString =
+        await File("assets/emoji_data/call_extensions.json").readAsString();
     Map<String, dynamic> shortCodes = jsonDecode(shortcodesString);
+    Map<String, dynamic> callExtensions = jsonDecode(callExtensionsString);
 
     for (var e in data) {
       var emoji = e as Map<String, dynamic>;
+      var callExtension = callExtensions[emoji["label"]];
 
       if (!emoji.containsKey("group")) continue;
 

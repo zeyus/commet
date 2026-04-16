@@ -1,0 +1,84 @@
+{
+    "cat": {
+        "order": 12,
+        "sound": {
+            "mp3": "sounds/reactions/cat.mp3",
+            "ogg": "sounds/reactions/cat.ogg"
+        }
+    },
+    "clapping hands": {
+        "order": 11,
+        "sound": {
+            "mp3": "sounds/reactions/clap.mp3",
+            "ogg": "sounds/reactions/clap.ogg"
+        }
+    },
+    "cricket": {
+        "order": 10,
+        "sound": {
+            "mp3": "sounds/reactions/crickets.mp3",
+            "ogg": "sounds/reactions/crickets.ogg"
+        }
+    },
+    "deer": {
+        "order": 9,
+        "sound": {
+            "mp3": "sounds/reactions/deer.mp3",
+            "ogg": "sounds/reactions/deer.ogg"
+        }
+    },
+    "dog": {
+        "order": 8,
+        "sound": {
+            "mp3": "sounds/reactions/dog.mp3",
+            "ogg": "sounds/reactions/dog.ogg"
+        }
+    },
+    "drum": {
+        "order": 7,
+        "sound": {
+            "mp3": "sounds/reactions/baduntss.mp3",
+            "ogg": "sounds/reactions/baduntss.ogg"
+        }
+    },
+    "grinning squinting face": {},
+    "light bulb": {
+        "order": 5,
+        "sound": {
+            "mp3": "sounds/reactions/lightbulb.mp3",
+            "ogg": "sounds/reactions/lightbulb.ogg"
+        }
+    },
+    "OK hand": {},
+    "party popper": {
+        "order": 4,
+        "sound": {
+            "mp3": "sounds/reactions/party.mp3",
+            "ogg": "sounds/reactions/party.ogg"
+        }
+    },
+    "sign of the horns": {
+        "order": 6,
+        "sound": {
+            "mp3": "sounds/reactions/rock.mp3",
+            "ogg": "sounds/reactions/rock.ogg"
+        }
+    },
+    "smiling face with hearts": {
+        "order": 3
+    },
+    "thumbs down": {
+        "order": 2
+    },
+    "thumbs up": {
+        "order": 1
+    },
+    "waving hand": {
+        "order": 0,
+        "sound": {
+            "mp3": "sounds/reactions/wave.mp3",
+            "ogg": "sounds/reactions/wave.ogg"
+        }
+    },
+    "woozy face": {}
+}
