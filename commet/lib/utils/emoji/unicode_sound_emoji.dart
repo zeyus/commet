@@ -10,6 +10,9 @@ class UnicodeEmojis {
 class UnicodeSoundEmojticonPack extends UnicodeEmoticonPack {
   final SoundAsset sound;
 
+  List<List<UnicodeSoundEmojiData>> get dataPacks =>
+      super.dataPacks as List<List<UnicodeSoundEmojiData>>;
+
   UnicodeSoundEmojticonPack(
       {required super.getLocalisedName,
       required super.dataPacks,
@@ -17,12 +20,6 @@ class UnicodeSoundEmojticonPack extends UnicodeEmoticonPack {
       required this.sound,
       super.icon,
       super.image});
-
-  @override
-  List<Emoticon> get emoji => super
-      .emoji
-      .map((e) => UnicodeSoundEmoticon(e.text, sound: sound))
-      .toList();
 }
 
 abstract interface class MatrixCallReaction {
