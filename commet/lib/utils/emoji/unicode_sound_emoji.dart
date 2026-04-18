@@ -7,13 +7,13 @@ class UnicodeEmojis {
   static List<UnicodeEmoticonPack>? packs;
 }
 
-class UnicodeSoundEmojticonPack extends UnicodeEmoticonPack {
+class UnicodeSoundEmoticonPack extends UnicodeEmoticonPack {
   final SoundAsset sound;
 
   List<List<UnicodeSoundEmojiData>> get dataPacks =>
       super.dataPacks as List<List<UnicodeSoundEmojiData>>;
 
-  UnicodeSoundEmojticonPack(
+  UnicodeSoundEmoticonPack(
       {required super.getLocalisedName,
       required super.dataPacks,
       required super.identifier,
